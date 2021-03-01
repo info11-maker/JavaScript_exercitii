@@ -141,6 +141,13 @@ for (x in person) {
 }
 console.log(person);*/
 
+//for of
+/*const myArray = [1,2,3,4];
+
+for (const element of myArray) {
+  console.log(element);
+}*/
+
 //for in
 /*var txt = ""
 var myArray= [1, 2, 3, 4]; 
@@ -155,63 +162,6 @@ console.log(myArray);*/
 const map = myArray.map(x => x * 2);
 
 console.log(map);*/
-
-/*let array = {
-   "John",
-    marks: [10, 8, 7],
-    name: "Pete",
-    marks: [9, 6, 7],
-    name: "Mary",
-    marks: [10, 8, 9]
-  };
-const average = (array) => array.marks.reduce((a, b) => a + b) / array.length;
-console.log(average);*/
-
-/*var fnSumAvgArray = (arr) => arr.reduce( ( a, c ) => a + c, 0 )/arr.length;
-var arr = [
-    ["Bobby","87"],
-    ["Charles","100","22","37"],
-    ["Eric","65","49"],
-]
-var output = Object.values( arr.reduce( (a,c) => ( 
-a[c[0]] = (a[c[0]] || { name : c[0], scores : [] }), //check if accumulator already has been initialized for this name or else intialize
-a[ c[ 0 ] ].scores.push ( +c[1] ),  //push the score into the name based score array
-a ) , {}) ) //return  the accumulator
-.map( s => (s.avg = fnSumAvgArray(s.scores),  s));
-      
-console.log( output );*/
-
-//№9
-/*const words = [1, "a", 2, null, 3, undefined, 4, {}, 5, 6, `word`, 7, 8, false, 9, 100];
-
-const result = words.filter(Number);
-
-console.log(result);*/
-
-
-//№10
-/*let sortArray =  [8, 7,  2,  2,  3, 4, 2,  5, 5, 6, 7, 8, 5, 9, 0, 1]; 
-
-myData.sort().filter(function(el,i,a){return i===a.indexOf(el)})
-console.log(myData);*/
-
-//№5
-/*const myArray = [1, 2, 3, 4];
-const square = myArray.map(x => x * x);
-console.log(myArray);
-console.log(square);*/
-
-//№6 
-/*const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-const newArr = numbers.splice(4,0, 0,0,0);
-console.log(numbers);*/
-
-//total of array
-/*var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
-return total + current;
-}, 0);
-
-console.log(total);*/
 
 //№3
 /*let styles = ["Jazz", "Bluz"]
@@ -229,18 +179,74 @@ console.log(styles);
 const newArr3 = styles.unshift("Rap", "Raggy");
 console.log(styles);*/
 
+//№4
+/*numberInputs = 5;
+var i = 0;   
+var userInput; 
+sum = 0; 
+// Collect inputs
+for(i=0; i<numberInputs; i++)
+{   
+    userInput = parseInt(prompt('Enter input '));
+    sum += userInput;
+}
+if(userInput === "" || userInput === null || isFinite(userInput)) {	
+}
+alert('Suma: '+ sum.toFixed(2));//the .toFixed sets it to 2 decimal places*/
+
+//№5
+/*const myArray = [1, 2, 3, 4];
+const square = myArray.map(x => x * x);
+console.log(myArray);
+console.log(square);*/
+
+//№6 
+/*const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+const newArr = numbers.splice(4,0, 0,0,0);
+console.log(numbers);*/
+
 //№7
 /*let number =  [1, 2, 3, 4, 5, 6, 7, 8, 9]
 let extractNumber = number.slice(2, 5)
 console.log(extractNumber);*/
 
-NUMBER_OF_INPUTS = 5;
-var i = 0;   
-var userInput; 
-sum = 0; 
-// Collect inputs
-for(i=0; i<NUMBER_OF_INPUTS; i++)
-{   userInput = parseInt(prompt('Enter input '+(i+1)+' of '+NUMBER_OF_INPUTS));
-    sum += userInput;
-}
-alert('Suma: '+ sum.toFixed(2)); //the .toFixed sets it to 2 decimal places
+//№9
+
+/*const words = [1, "a", 2, null, 3, undefined, 4, {}, 5, 6, `word`, 7, 8, false, 9, 100];
+const result = words.filter(Number);
+console.log(result);*/
+
+//№10
+/*let sortArray =  [8, 7,  2,  2,  3, 4, 2,  5, 5, 6, 7, 8, 5, 9, 0, 1]; 
+let uniqueSorted = sortArray.filter((item, index, array) => {
+    return array.indexOf(item) === index
+  })
+uniqueSorted.sort();
+console.log(uniqueSorted);*/
+
+//№2
+let person = [
+    {
+    name:"John",
+    marks: [10, 8, 7]},
+    {
+    name: "Pete",
+    marks: [9, 6, 7]},
+    {
+    name: "Mary",
+    marks: [10, 8, 9]
+}];
+const adder = (a,b) => a + b;
+const getAverage = (person) => person.marks.reduce(adder) / person.length;
+console.log(person);
+
+
+//total of array
+/*var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+return total + current;
+}, 0);
+console.log(total);*/
+
+
+
+
