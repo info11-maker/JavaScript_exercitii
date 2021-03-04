@@ -1,27 +1,5 @@
-/*var el_up = document.getElementById("GFG_UP"); 
-            var el_down = document.getElementById("GFG_DOWN"); 
-            var str = "Click on button to change the background color"; 
-          
-            el_up.innerHTML = str; 
-          
-            function changeColor(color) { 
-                document.body.style.background = color; 
-            } 
-              
-            function gfg_Run() { 
-                changeColor('green'); 
-                el_down.innerHTML = "Background Color changed"; 
-            }
-            function gfg_Run1() { 
-                changeColor('blueviolet'); 
-                el_down.innerHTML = "Background Color changed"; 
-            }
-            function gfg_Run2() { 
-                changeColor('pink'); 
-                el_down.innerHTML = "Background Color changed"; 
-            }       */
-        
-                //insarcinarea 1
+
+ //insarcinarea 1
 /*let number = prompt('Care este numarul?', '0');
 
  if (number == 0) {
@@ -107,7 +85,7 @@ if (array.length === 0)
 }
 console.log(average([4,3,4]));*/
                                                                             //******
-//3.array
+                                                                            //3.array
 //№1
 //for
 /*let myArray = [1, 2, 3, 4, 5];
